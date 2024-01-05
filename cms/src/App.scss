@@ -3,6 +3,9 @@ $gap: 10px;
 $navbar-app-bg-color: #0067a3;
 $navbar-board-bg-color: #0079bf;
 $list-bg-color: #ebecf0 ;
+$colmun-header-height: 36px;
+$column-footer-height: 36px;
+$column-border_radius: $column-border_radiu;
 
 body {
   margin: 0;
@@ -52,21 +55,31 @@ body {
 
           header {
             padding-left: 15px;
-            height: 36px;
-            line-height: 36px;
+            height: $colmun-header-height;
+            line-height: $colmun-header-height;
             font-size: 16px;
             font-weight: bold;
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
+            border-top-left-radius: $column-border_radius;
+            border-top-right-radius: $column-border_radius;
 
           footer {
-            padding-left: 15px;
-            height: 36px;
-            line-height: 36px;
-            font-size: 16px;
-            font-weight: bold;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            padding-left: 10px;
+            height: $colmun-footer-height;
+            line-height: 3$colmun-footer-height;
+            border-bottom-left-radius: $column-border_radius;
+            border-bottom-right-radius: $column-border_radius;
+          }
+
+          ul {
+            list-style-type: none;
+            margin: 0;
+            max-height: calc(100% - #{$colmun-header-height} - #{$colmun-footer-height});
+            overflow-y: auto;
+
+            li {
+              background-color: white;
+              padding: $gap;
+            }
           }
           }
         }
