@@ -3,9 +3,9 @@ $gap: 10px;
 $navbar-app-bg-color: #0067a3;
 $navbar-board-bg-color: #0079bf;
 $list-bg-color: #ebecf0 ;
-$colmun-header-height: 36px;
+$column-header-height: 36px;
 $column-footer-height: 36px;
-$column-border_radius: $column-border_radiu;
+$column-border_radius: 5px;
 
 body {
   margin: 0;
@@ -41,7 +41,7 @@ body {
 
     .board-columns {
       display: flex;
-      overflow: auto;
+      overflow-x: auto;
 
       .column {
         flex: 0 0 auto;
@@ -55,8 +55,8 @@ body {
 
           header {
             padding-left: 15px;
-            height: $colmun-header-height;
-            line-height: $colmun-header-height;
+            height: $column-header-height;
+            line-height: $column-header-height;
             font-size: 16px;
             font-weight: bold;
             border-top-left-radius: $column-border_radius;
@@ -64,8 +64,8 @@ body {
 
           footer {
             padding-left: 10px;
-            height: $colmun-footer-height;
-            line-height: 3$colmun-footer-height;
+            height: $column-footer-height;
+            line-height: $column-footer-height;
             border-bottom-left-radius: $column-border_radius;
             border-bottom-right-radius: $column-border_radius;
           }
@@ -73,7 +73,7 @@ body {
           ul {
             list-style-type: none;
             margin: 0;
-            max-height: calc(100% - #{$colmun-header-height} - #{$colmun-footer-height});
+            max-height: calc(100% - #{$column-header-height} - #{$column-footer-height});
             overflow-y: auto;
 
             li {
