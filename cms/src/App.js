@@ -17,7 +17,16 @@ function App() {
       <footer>Add another Card</footer>
     </div>
 
-    
+    <div className="column">
+      <header>Planning</header>
+        <ul>
+          <li>
+            <img src="https://raw.githubusercontent.com/haryphamdev/sharing-host-files/master/trello/img-design.png"/>
+              Design & Research
+          </li>
+        </ul>
+        <footer>Add another Card</footer>
+      </div>
     
     
 
