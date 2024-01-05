@@ -1,6 +1,7 @@
 $board-bg-color: aqua;
 $gap: 10px;
-$navbar-app-bg-color: 
+$navbar-app-bg-color: #0067a3;
+$navbar-board-bg-color: #0079bf;
 
 body {
   margin: 0;
@@ -25,11 +26,24 @@ body {
     align-items: center;
 
     &.app {
-      
+      font-size: 1.5rem;
+      background-color: $navbar-app-bg-color;
     }
 
     &.board {
+      font-size: 1.3rem;
+      background-color: $navbar-board-bg-color;
+    }
 
+    .board-columns {
+      display: flex;
+      overflow: auto;
+
+      .column {
+        flex: 0 0 auto;
+        width: 300px;
+        height: calc(100% - #{$gap});
+      }
     }
   }
 }
