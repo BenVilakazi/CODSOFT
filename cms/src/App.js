@@ -13,6 +13,7 @@ function App() {
               Design & Research
             </li>
           <li>second</li>
+          <li>third</li>
         </ul>
       <footer>Add another Card</footer>
     </div>
@@ -24,6 +25,8 @@ function App() {
             <img src="https://raw.githubusercontent.com/haryphamdev/sharing-host-files/master/trello/img-design.png"/>
               Design & Research
           </li>
+          <li>second</li>
+          <li>third</li>
         </ul>
         <footer>Add another Card</footer>
       </div>
